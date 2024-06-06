@@ -88,9 +88,7 @@ module top(
         .rs1(rs1),
         .rs2(rs2),
         .mdu_op(mdu_op),
-        .mdu_valid(mdu_valid),
-        .mdu_result(mdu_result),
-        .mdu_ready(mdu_ready)
+        .mdu_result(mdu_result)
     );
     data_mem dmem (
         .clk(clk),
@@ -122,7 +120,6 @@ module top(
         .Asel(Asel),
         .WBsel(WBsel),
         .MemRW(MemRW),
-        .mdu_op(mdu_op),
-        .mdu_valid(mdu_valid)
+        .mdu_op(mdu_op)
     );
 endmodule

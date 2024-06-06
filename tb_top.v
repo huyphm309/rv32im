@@ -22,7 +22,7 @@ module tb_top(
     end
     initial begin
         rst = 0;
-        #4 rst = 1;
+	#4 rst = 1;
     end
     
     

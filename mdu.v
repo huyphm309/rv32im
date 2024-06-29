@@ -31,7 +31,7 @@ module mdu (
                     quotient = $signed(rs1) / $signed(rs2);
                     mdu_result = quotient;
                 end else begin
-                    mdu_result = 32'b0; // X? lı chia cho 0
+                    mdu_result = 32'b0; 
                 end
             end
             divu: begin
@@ -39,7 +39,7 @@ module mdu (
                     quotient = rs1 / rs2;
                     mdu_result = quotient;
                 end else begin
-                    mdu_result = 32'b0; // X? lı chia cho 0
+                    mdu_result = 32'b0; 
                 end
             end
             rem: begin
@@ -47,7 +47,7 @@ module mdu (
                     remainder = $signed(rs1) % $signed(rs2);
                     mdu_result = remainder;
                 end else begin
-                    mdu_result = 32'b0; // X? lı chia cho 0
+                    mdu_result = 32'b0; 
                 end
             end
             remu: begin
@@ -55,7 +55,7 @@ module mdu (
                     remainder = rs1 % rs2;
                     mdu_result = remainder;
                 end else begin
-                    mdu_result = 32'b0; // X? lı chia cho 0
+                    mdu_result = 32'b0; 
                 end
             end
             default: begin
